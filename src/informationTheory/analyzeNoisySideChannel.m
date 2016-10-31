@@ -23,7 +23,7 @@ if(visualize)
   figure(10);
   clf;
   visualizeRawData(data);
-  visualizeGroupDistributions(data)
+  visualizeGroupDistributions(data);
   disp('Visualization paused. Press ENTER to continue.')
   pause;
   visualizeProbabilityDistributions(P, O, class_probs);
