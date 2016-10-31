@@ -12,7 +12,7 @@ public class PassWordCheck
       }
       
       try {
-        Thread.sleep(t);                 //1000 milliseconds is one second.
+        Thread.sleep(t);                
       } catch(InterruptedException ex) {
         Thread.currentThread().interrupt();
       }

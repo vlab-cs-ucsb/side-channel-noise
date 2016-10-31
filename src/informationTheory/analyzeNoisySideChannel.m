@@ -1,9 +1,11 @@
 function [info_gain expected_info_gain time_bin_centers] = analyzeNoisySideChannel(data, visualize = false, animate = false, stops = [])
 warning off;
-figure(10);
-clf;
-disp('Analyzing Data. Press ENTER to start.');
-pause;
+
+if(visualize)
+  disp('Analyzing Data. Press ENTER to start.');
+  pause;
+end
+
 data(3:end,:) = filterObservations(data(3:end,:));
 class_probs = data(2,:);
 num_bins = 100;
@@ -18,6 +20,8 @@ observations = data(3:end,:);
 
 
 if(visualize)
+  figure(10);
+  clf;
   visualizeRawData(data);
   visualizeGroupDistributions(data)
   disp('Visualization paused. Press ENTER to continue.')
@@ -30,6 +34,6 @@ if(visualize)
   	visalizeConditionalProbabilities(data, P, input_classes, class_probs, num_samples, time_bin_centers, info_gain, expected_info_gain, stops);
   end
   visualizeInfoGain(time_bin_centers, info_gain, expected_info_gain);
-else
-  visualizeInfoGain(time_bin_centers, info_gain, expected_info_gain, 111);
+% else
+%   visualizeInfoGain(time_bin_centers, info_gain, expected_info_gain, 111);
 end
