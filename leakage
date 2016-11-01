@@ -17,5 +17,5 @@ experiment1 = load(arg_list{1});
 disp(['   Obs        ', 'Leakage']);
 disp([observables(1:end-1)', infogain']);
 printf ('\n');
-disp(['Leakage = ', num2str(avg_infogain)]);
+disp(['Expected Leakage = ', num2str(avg_infogain)]);
 printf ('\n');
