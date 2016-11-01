@@ -64,7 +64,7 @@ Inside src directroy, from within an Octave session, run detailedPasswordExample
 This produces 
 
 1. Plot of the raw data (top left).
-2. Vertical distribution plot of the raw data (top left).
+2. Vertical distribution plot of the raw data (top right).
 3. Distribution overlay for each observable (middle left).
 4. Normalized log distributions for each observable (bottom left).
 5. Animated conditional probability bar chart (middle right).
