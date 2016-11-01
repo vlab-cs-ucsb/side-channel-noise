@@ -12,20 +12,22 @@ apt-get install octave
 
 # Input Format
 
+Input is a space or tab separated file. Four sample input files are provided in the data directory.
 
 
-	# Created by Octave 3.8.1, Mon Jul 11 00:21:31 2016 PDT <lucas@hellyeah>
-	# name: data
+	# Header: meta data information
+	# name: data_name
 	# type: matrix
-	# rows: 1002
-	# columns: 4
-	 0 1 2 3
-	 0.75 0.1875 0.046875 0.015625
-	 0.08476805686950684 0.1006350517272949 0.1691451072692871 0.2064101696014404
-	 0.0738990306854248 0.1213130950927734 0.1603310108184814 0.203639030456543
-	 0.06299209594726562 0.1218612194061279 0.1622838973999023 0.2065389156341553
-	 0.08266305923461914 0.1234049797058105 0.1639530658721924 0.2007169723510742
-
+	# rows: number of data points (m) + 2 extra lines for observations labels and probabilities
+	# columns: number of observation classes
+	 obs_label_1  obs_label_2  ...  obs_label_n
+	 p_obs_1      p_obs_2      ...  p_obs_n
+	 x_1_1        x_2_1        ...  x_n_1
+	 x_1_2        x_2_2        ...  x_n_2
+	 .            .                 .
+	 .            .                 .
+	 .            .                 .
+	 x_1_m        x_2_m        ...  x_n_m
 
 # Basic usage (leakage computation)
 
