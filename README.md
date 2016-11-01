@@ -57,7 +57,7 @@ Inside src directroy, from within an Octave session, run detailedPasswordExample
 
 
 	$ octave
-	octave >> detailedPasswordExample
+	octave>> detailedPasswordExample
 
 This produces 
 
