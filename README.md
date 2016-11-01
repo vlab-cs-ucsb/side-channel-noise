@@ -31,6 +31,8 @@ Input is a space or tab separated file. Four sample input files are provided in 
 
 # Basic usage (leakage computation)
 
+Simplest use is to call the leakage script on a data file of noisy data observations. Produces a table of leakage given observation and then outputs expected leakage (conditional entropy H(input|observation)).
+
     octave leakage data/passwordData_length_3_overlap
 	   Obs        Leakage
 	   0.051602   2.000000
