@@ -2,9 +2,10 @@
 
 arg_list = argv ();
 
-addpath('./informationTheory');
-addpath('./visualization');
-addpath('./utils');
+
+addpath('./src/informationTheory');
+addpath('./src/visualization');
+addpath('./src/utils');
 
 visualize = false; 
 animate = false;

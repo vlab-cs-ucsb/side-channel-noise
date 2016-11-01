@@ -1,7 +1,7 @@
 public class PassWordCheck
 {
 
-  private static String pw = "0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000";
+  private static String pw = "000000000000000000000000000";
   //private static String pw = "0000";
   private static int t = 0;
 
