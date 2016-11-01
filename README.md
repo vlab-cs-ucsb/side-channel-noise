@@ -5,10 +5,7 @@ This is a collection of octave scripts for computing and visualizing side channe
 
 Basic functionality outputs a table of observations and corresponding leaked information with expected information leakage summarized at the end.
 
-
-
-
-More advanced usage produces a visualization of 
+More advanced usage produces a visualization of the conditional entropy computation.
 
 Requires an installation of Octave. On Ubuntu:
 apt-get install octave 
@@ -34,3 +31,10 @@ apt-get install octave
 	   0.121607   2.000000
 
 	Expected Leakage = 1.5013
+
+# Visualization
+
+From within an Octave session:
+
+	
+![Alt text](visual-leak.png?raw=true "Leakage Visualization.")
