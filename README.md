@@ -55,7 +55,7 @@ Simplest use is to call the leakage script on a data file of noisy data observat
 
 # Visualization
 
-Inside src directroy, from within an Octave session, run detailedPasswordExample to see how the visualization works.
+Inside src directory, from within an Octave session, run detailedPasswordExample to see how the visualization works.
 
 
 	$ octave
