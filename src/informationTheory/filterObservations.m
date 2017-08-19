@@ -4,7 +4,7 @@ function filtered = filterObservations(observations)
 
 for i = 1:num_classes
   obs = observations(:,i);
-  inliers = abs(obs - mean(obs)) < 2.5 * std(obs);
+  inliers = abs(obs - mean(obs)) < 5 * std(obs);
   obs(!inliers) = mean(obs);
   filtered(:,i) = obs;
 end

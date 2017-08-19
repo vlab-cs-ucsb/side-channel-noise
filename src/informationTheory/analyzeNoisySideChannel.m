@@ -7,6 +7,7 @@ if(visualize)
 end
 
 data(3:end,:) = filterObservations(data(3:end,:));
+
 class_probs = data(2,:);
 num_bins = 100;
 
@@ -16,6 +17,8 @@ observations = data(3:end,:);
 
 [num_samples num_classes] = size(observations);
 [P O time_bin_centers] = computeProbabilityTable(data, num_bins);
+
+
 [info_gain expected_info_gain] = infoGain(P, class_probs);
 
 

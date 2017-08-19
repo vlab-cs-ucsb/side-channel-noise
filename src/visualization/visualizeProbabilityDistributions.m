@@ -19,7 +19,7 @@ for i = 1:size(P,1)
   ylabel('Log2 ( Probability )');
   title(['Corrected Log2( P(Observation | input = class ', num2str(i),'))']);
   hold on;
-  drawnow;
+  % drawnow;
   %pause;
 end
 

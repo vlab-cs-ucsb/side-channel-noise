@@ -11,7 +11,7 @@ time_bin_centers = min_observation:delta_time_bin:max_observation;
 
 for i = 1:num_classes
   obs = observations(:,i);
-  inliers = abs(obs - mean(obs)) < 2.5 * std(obs);
+  inliers = abs(obs - mean(obs)) < 5 * std(obs);
   obs = obs(inliers);
   [f o] = hist(obs,time_bin_centers);
   p_o = f/sum(f);
