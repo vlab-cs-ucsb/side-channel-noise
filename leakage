@@ -1,4 +1,4 @@
-#! /bin/octave -qf
+#! /usr/bin/octave -qf
 
 arg_list = argv ();
 
